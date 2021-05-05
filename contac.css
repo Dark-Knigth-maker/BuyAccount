@@ -122,11 +122,14 @@ body {
     margin-bottom: 60px;
 }
 
-.info__title span{
+.info__title img{
     font-size: 100px;
     display: block;
     text-align: center;
     margin-bottom: 20px;
+    border-radius: 50%;
+    /* height: 100px;
+    width: 100px; */
 }
 .info__title h2 {
     font-size: 35px;
