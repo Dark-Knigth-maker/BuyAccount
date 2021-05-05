@@ -124,12 +124,14 @@ body {
 
 .info__title img{
     font-size: 100px;
-    display: block;
+    display:inline-block;
+    position: relative;
     text-align: center;
     margin-bottom: 20px;
     border-radius: 50%;
-    /* height: 100px;
-    width: 100px; */
+    height: 100px;
+    width: 100px;
+    left: 55px;
 }
 .info__title h2 {
     font-size: 35px;
