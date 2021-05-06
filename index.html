@@ -26,49 +26,31 @@
         <div></div><div></div><div></div><div></div>
         </div>
     <!-- Navigation -->
-    <div class="thumb-nav">
-        <input type="checkbox" class="nav-open-check"/>
-        <div class="nav-open-button">
-            <i class="fas fa-bars"></i>
-        </div>
-        <div class="nav-options">
-            <div>
-                <a href="#"><h4 class="material-icon">Home   <i class="fas fa-chevron-circle-down"></i></h4></a>
+    <header>
+        <nav class="nav">
+            <div class="nav__main">
+                <ul id="nav__ul">
+                    <span class="nav__icon-btn">&#9776</span>
+                    <li class="nav__li"><i class="fas fa-home"></i><a href="#">Home</a></li>
+                    <li class="nav__li"><i class="fas fa-user-circle"></i><a href="#">Cuentas</a></li>
+                    <li class="nav__li"><i class="fas fa-laptop-code"></i><a href="#">Activacion</a></li>
+                    <li class="nav__li"><i class="fas fa-info-circle"></i><a href="#">Informacion</a></li>
+                </ul>
             </div>
-            <div>
-                <a href="#"><h4 class="material-icon cuentas">Cuentas   <i class="fas fa-chevron-circle-down"></i></h4></a>
-                <div class="desple-cuentas">
-                    <div>
-                        <h5>Spotify</h5>
-                    </div>
-                    <div>
-                        <h5>Prime Video</h5>
-                    </div>
-                    <div>
-                        <h5>HBO Go</h5>
-                    </div>
-                    <div>
-                        <h5>Disney+</h5>
-                    </div>
-                    <div>
-                        <h5>YouTube Premium</h5>
-                    </div>
-                    <div>
-                        <h5>Crunchyroll</h5>
-                    </div>
-                    <div>
-                        <h5>Paramount</h5>
-                    </div>
+            <ul class="nav__responsive-ul" id="nav__responsive-ul">
+                <div class="nav__responsive-button">
+                    <div class="fas fa-bars"></div>
                 </div>
-            </div>
-            <div>
-                <a href="#"><h4 class="material-icon">Activacion   <i class="fas fa-chevron-circle-down"></i></h4></a>
-            </div>
-            <div>
-                <a href="#"><h4 class="material-icon">Informacion   <i class="fas fa-chevron-circle-down"></i></h4></a>
-            </div>
-        </div>
-    </div>
+                    
+                <div class="nav__li-container">
+                    <li class="nav__responsive-li"><i class="fas fa-home"></i><a href="#">Home</a></li>
+                    <li class="nav__responsive-li"><i class="fas fa-user-circle"></i><a href="#">Cuentas</a></li>
+                    <li class="nav__responsive-li"><i class="fas fa-laptop-code"></i><a href="#">Activacion</a></li>
+                    <li class="nav__responsive-li"><i class="fas fa-info-circle"></i><a href="#">Informacion</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
     <!-- form -->
     <div class="form">
         <section class="contact__info">

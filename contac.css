@@ -73,59 +73,120 @@ body {
     position: absolute;
     top: 60%;
 }
-/* Navigation */
-.desple-cuentas {
+/* Nav */
+
+.nav__responsive-ul {
     display: none;
 }
-.nav-options > div{
-    z-index: 1;
-    transition: all 450ms linear;
-    color: black;
-}
 
-.nav-open-check,
-.nav-open-button,
-.nav-options > div{
-    width: 125px;
-    height: 50px;
+#nav__ul {
     position: fixed;
-    background-color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: #ff6565;
+    display: inline-block;
+    height: 72vh;
+    width: 20%;
+    padding-top: 14%;
+    padding-left: 10px;
+    font-size: 20px;
+    list-style: none;
+    left: -200px;
+    transition: all 0.5s linear;
+}
+
+#nav__ul.active {
+    left: 0;
+}
+
+.nav__li {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.nav__li:hover {
+    padding: 30px;
+    background: #f55;
+    font-weight:900;
+    font-size: 20px;
+    transition: all 0.5s linear;
+}
+
+
+.nav__li a {
+    color: white;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+
+
+.nav__icon-btn {
+    position: absolute;
+    left: 220px;
+    top: 20px;
     cursor: pointer;
-    left: 5px;
-    top: 15px;
-    color: white;
-}
-.nav-options > div a{
-    color: black;
-}
-
-.nav-open-button{
-    transform: rotate(0deg);
-    transition: transform 450ms ease;
-    z-index: 2;
-    background-color: #ff7979;
-    color: white;
-}
-.nav-open-check {
-    z-index: 3;
-    opacity: 0;
+    display: block;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    animation: movimiento__icon 1s linear infinite;
 }
 
-.nav-open-check:checked ~ .nav-open-button ~ .nav-options > div:first-child {
-    margin-top: 75px;
+@keyframes movimiento__icon {
+    0% {
+        top: 25px;
+    }
+    50% {
+        top: 20px;
+    }
+    100% {
+        top: 25px;
+    }
 }
-.nav-open-check:checked ~ .nav-open-button ~ .nav-options > div:nth-child(even) {
-    margin-top: 150px;
-}
-.nav-open-check:checked ~ .nav-open-button ~ .nav-options > div:nth-child(3) {
-    margin-top: 225px;
-}
-.nav-open-check:checked ~ .nav-open-button ~ .nav-options > div:last-child {
-    margin-top: 300px;
+
+@media (max-width: 500px) {
+    #nav__ul {
+        display: none;
+    }
+
+    #nav__responsive-ul {
+        position: absolute;
+        display: inline-block;
+        background: #ff6565;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        left: -400px;
+        transition: all 1s ease-in-out;
+    }
+
+    #nav__responsive-ul.active {
+        left: 0;
+    }
+
+    .nav__responsive-li {
+        padding-top: 40px;
+        text-align: center;
+        font-size: 30px;
+    }
+    .nav__responsive-li a {
+        color: #fff;
+        list-style: none;
+    }
+
+    .nav__responsive-li:hover{
+        color: #00af91;
+    }
+    .nav__responsive-li a:hover {
+        color: #00af91;
+    }
+
+    .nav__responsive-button {
+        position: fixed;
+        font-size: 35px;
+        right: 15px;
+        top: 10px;
+        z-index: 50;
+    }
 }
 /* formulario */
 .form {
