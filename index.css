@@ -194,7 +194,7 @@ body {
     
     background: #374045;
     width: 1050px;
-    height: 950px;
+    height: 650px;
     left: 10%;
     margin: 50px auto;
     border-radius: 10px;
@@ -269,73 +269,38 @@ body {
 }
 
 /* Formulario de contacto */
-form.form__contact {
+form.info {
     width: 90%;
     padding: 100px 40px;
 }
 
-form.form__contact h2 {
+.welcome {
     font-size: 25px;
     font-weight: 600;
     color: #fff;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+    position: relative;
 }
 
-form.form__contact .form__user-info {
+form.info .form__user-info {
     display: flex;
     flex-direction: column;
 }
-
-form.form__contact label {
-    font-weight: 60;
+.rojo {
+    color: #cf4d4d;
 }
-    
-    
-form.form__contact input,
-form.form__contact textarea {
-    width: 100%;
-    padding: 8px 0px 5px;
-    margin-bottom: 20px;
-
-    border: none;
-    border-bottom: 2px solid #d1d1d1;
-    background: #374045;
-
-    font-family:Arial, Helvetica, sans-serif;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 400;
-}
-
-form.form__contact textarea {
-    max-width: 100%;
-    min-width: 100%;
-    max-height: 90px;
-}
-
-form.form__contact input[type="submit"] {
-    width: 180px;
-    background: #ce1212;
-    padding: 10px;
-    border: none;
-    border-radius: 25px;
-    align-self: flex-end;
-
-    color: #fff;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-form.form__contact input[type="submit"]:hover {
-    background: #811212;
+.parte-info {
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 
 /* footer */
 
 .footer {
-    top: 1050px;
+    top: 750px;
     background: #1b1717;
     position: relative;
     width: 100%;
@@ -362,6 +327,7 @@ form.form__contact input[type="submit"]:hover {
         margin-top: 75px;
         margin-left: 10px;
         width: 350px;
+        height: 1050px;
     }
 
     .form__contact {
@@ -393,5 +359,13 @@ form.form__contact input[type="submit"]:hover {
         font-size: 50px;
         color: #fff;
         padding-right: 20px;
+    }
+    .footer {
+        top: 1150px;
+        background: #1b1717;
+        position: relative;
+        width: 100%;
+        height: 300px;
+        z-index: -1;
     }
 }
